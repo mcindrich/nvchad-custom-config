@@ -2,16 +2,34 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
+    -- neovim
     "vim",
     "lua",
+
+    -- webdev
     "html",
     "css",
     "javascript",
     "typescript",
     "tsx",
+
+    -- cpp dev
     "c",
+    "cpp",
+    "cmake",
+
+    -- markdown
     "markdown",
     "markdown_inline",
+
+    -- rust
+    "rust",
+
+    -- zig
+    "zig",
+
+    -- python
+    "python",
   },
   indent = {
     enable = true,
@@ -37,6 +55,16 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- rust
+    "rust-analyzer",
+    "rustfmt",
+
+    -- zig
+    "zls",
+
+    -- python
+    "pyright",
   },
 }
 
